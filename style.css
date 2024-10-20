@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+        :root {
+            --backGroundColor: #F9F6FD;
+            --primaryColor: #50514C;
+            --secondaryColor: #8c8269;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            background-color: var(--backGroundColor);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 80px;
+            padding-top: 40px;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar-links-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar-list-item {
+            margin-right: 20px;
+        }
+
+        .navbar-item {
+            padding: 10px 24px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            color: var(--primaryColor);
+        }
+
+        .navbar-item:hover {
+            color: var(--backGroundColor);
+            background-color: var(--primaryColor);
+            transition: all 0.3s ease; 
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        .section-title {
+            font-size: 60px;
+            font-weight: 800;
+            padding-left: 76px;
+            margin-bottom: 32px;
+            color: var(--backGroundColor);
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 44px;
+            background-color: var(--primaryColor);
+            z-index: -1;
+            transform: translateY(40%);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0 76px;
+        }
+
+        .container-left {
+            flex: 1;
+            padding-right: 20px;
+            background-color: var(--primaryColor);
+        }
+
+        .container-right {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .paragraph-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primaryColor);
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: var(--primaryColor);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        #internet .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+
+        #protokol .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+
+        #domain .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+
+        #hosting .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+
+        #dns .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+
+        #browser .container-left img {
+            border: 5px solid var(--primaryColor);
+        }
+        
